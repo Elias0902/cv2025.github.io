@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Elías</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio"> 
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="recursos/perfil.jpg" alt="Elías Armas" class="imagen-perfil">
+            </div>
+            <h1>ELIAS ARMAS</h1>
+            <h2>Ingeniero de Software - Developer Front-End || QA tester Manual || Email Marketing</h2>
+            <div class="redes">
+                <a href="https://github.com/Elias0902" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                <a href="https://api.whatsapp.com/send?phone=584122373562" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/eliperezdev/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Elias Armas.</span>
+                <strong style="font-weight: 400;">
+                    Más de 3 años de experiencia como Desarrollador de Software. Lideré el desarrollo FrontEnd en Meat Code, logrando un 75% de mejora en la entrega de productos, un 55% en eficiencia web y una plataforma unificada en cuanto a producción. Me dedico a crear soluciones eficientes y escalables que impulsan el crecimiento empresarial y mejoran las experiencias de los usuarios.
+                </strong>
+                </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            09 de Febrero</strong>
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            <a href="mailto:eliasarmas0902@gmail.com" target="_blank" style="text-decoration: none; color: white;">eliasarmas0902@gmail.com</a>
+                        </li>
+                        <li>
+                            <strong>Git Hub</strong>
+                            https://github.com/Elias0902
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            3001, Venezuela. Lara, Barquisimeto
+                        </li>
+                        <li>
+                            <strong>Cargo Actual</strong>
+                            <span>Productor Email Marketing</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <h3 class="cv-elias">Visualizar CV</h3>
+            <button>
+                <a href="recursos/ELIAS ARMAS CV.pdf" download="CV_ELIAS_ARMAS_ESPAÑOL_front-qa-emailMarketing" class="hover-subrayado-descargar">
+                Español
+                 <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Destacadas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Email Marketing | CRM </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>QA Tester Manual</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP | SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Profesionales</h3>
+                    <div class="skill">
+                        <span>Conocimiento de múltiples lenguajes y tecnologías</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo y comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Manejo de código limpio y mantenimiento</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Curiosidad y aprendizaje continuo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Especialista en Desarrollado de Websites</h4>
+                        <span class="casa">Universidad de Andrés Eloy Blanco</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Me complace compartir que he obtenido mi título de especialista en sitios web informativos durante el periodo comprendido entre 2022 y 2024.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería en Informatica/TSU Informatica</h4>
+                        <span class="casa">Universidad Andrés Eloy Blanco</span>
+                        <span class="fecha">2022-2026 (Actualmente)</span>
+                        <p>Me complace compartir que actualmente estoy cursando mi TSU e Ingeniería, y tengo el objetivo de obtener ambos títulos en el año 2026. Estoy emocionado/a por los desafíos académicos que me esperan.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cursos de idiomas certificado</h4>
+                        <span class="casa">Universidad Pedagógica Experimental Libertador (UPEL)</span>
+                        <span class="fecha"></span>
+                        <p>Actualmente me encuentro cursando por una certificación de idiomas en el lenguaje de Inglés.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>MEAT CODE</h4>
+                        <span class="casa">Desarrollador Productor - CRM</span>
+                        <span class="fecha">2024 - 2025</span>
+                        <p>Aumento del 30% de la tasa de apertura de correos electrónicos mediante la aplicación de estrategias eficaces de línea de asunto.
+                            Aumento del 40% de la tasa de conversión mediante la personalización del contenido y la aplicación de pruebas A/B.
+                            Reconocimiento interno por la campaña de marketing por correo electrónico que generó el mayor ROI de la historia de la empresa.
+                            Implantación de un sistema de automatización del correo electrónico que redujo en un 15% el tiempo dedicado a crear y enviar campañas, al tiempo que mejoró la coherencia y la puntualidad en el envío de correos electrónicos promocionales y transaccionales.
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>QA tester Manual </h4>
+                        <span class="casa">Chicks Gold Inc.</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>He trabajado como QA Tester manual en Chicks Gold Inc. Durante mi tiempo en la empresa, he desempeñado un papel fundamental en la detección y resolución de problemas, asegurando la calidad y funcionalidad de los productos y servicios. He realizado pruebas exhaustivas, identificando errores, documentando y reportando los resultados de manera clara y concisa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <h3 style="text-align: center;">Artistas a los cuales he impulsado sus publicidades</h3> <br>
+            <h4 style="font-weight: 400;text-align: center;">Explico un breve resumen, he hecho mailings en cantidades masivas que llegan directamente al cliente <br>
+            Estos son hechos para artistas de alta categoría para sus presentaciones y esto aumenta la tasa de compra de boletos, hasta en un 80%.
+        <br>    
+        <br>    
+        <br>    
+        </h4>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="recursos/img1.jpg" alt="Proyecto 1" class="img-project">
+                <div class="overlay">
+                    <h3>Ana Gabriel</h3>
+                    <p>Entre Otros</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="recursos/img2.jpg" alt="Proyecto 2" class="img-project">
+                <div class="overlay">
+                    <h3>Luis Fonsi</h3>
+                    <p>Entre Otros</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="recursos/img3.jpg" alt="Proyecto 3" class="img-project">
+                <div class="overlay">
+                    <h3>Nicky Jam</h3>
+                    <p>Entre Otros</p>
+                </div>
+            </div>
+        
+            <h2 style="font-size: 30px; font-weight: 400;">También he trabajado como QA realizando pruebas a sitios relacionados a compra y venta de cripto monedas y utilización de aspectos en juegos</h2>
+            <h4 style="font-weight: 400;text-align: center;">Explico un breve resumen, he testeado sitios para lograr la mejor experiencia al usuario y su compra de aspectos en video juegos <br>
+            Estos son algunos de los juegos los cuales estas asociados
+            </h4>
+            <div class="proyecto">
+                <img src="recursos/b/1.png" alt="Proyecto 4" class="img-project">
+                <div class="overlay">
+                    <h3>Monedas</h3>
+                    <p>De VideoJuego</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="recursos/b/2.png" alt="Proyecto 5" class="img-project">
+                <div class="overlay">
+                    <h3>Apectos</h3>
+                    <p>De VideoJuego</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="recursos/b/3.png" alt="Proyecto 6" class="img-project">
+                <div class="overlay">
+                    <h3>Items</h3>
+                    <p>De VideoJuego</p>
+                </div>
+            </div>
+            
+            <style>
+                .proyecto {
+                    position: relative;
+                    width: 340px; /* Ancho fijo para todos los proyectos */
+                    height: 255px; /* Alto fijo para todos los proyectos */
+                    overflow: hidden; /* Recorta cualquier parte de la imagen que sobresalga */
+                }
+            
+                .img-project {
+                    width: 100%;
+                    height: 100%; /* Ajusta la altura al contenedor */
+                    object-fit: cover; /* Ajusta la imagen sin distorsionarla, recortándola si es necesario */
+                }
+            
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%; /* Cubre todo el contenedor */
+                    background: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                }
+            
+                .proyecto:hover .overlay {
+                    opacity: 1; /* Muestra la superposición al hacer hover */
+                }
+            </style>
+            
+        
+        </div>
+    </section>
+    
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>   
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="https://g.co/kgs/pdS79bb" style="text-decoration: none; color: white;">3001, Venezuela. Lara, Barquisimeto.</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                               <div class="color-num"> <a href="https://api.whatsapp.com/send?phone=584122373562" style="text-decoration: none; color: white;"> +58 4122373562 </a></div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                eliasarmas0902@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/Elias0902" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://api.whatsapp.com/send?phone=584122373562" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/eliperezdev/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
